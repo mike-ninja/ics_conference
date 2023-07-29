@@ -1,12 +1,9 @@
-import Navbar from "../components/Navbar";
-
-const About = () => {
+export default function Contact() {
   return (
     <>
-      <Navbar />
       <div className="min-h-screen">
         <main className="max-w-5xl mx-auto relative">
-          <h1>About</h1>
+          <h1>Contact</h1>
           <p>
             Lorem ipsum dolor sit amet, officia excepteur ex fugiat
             reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit
@@ -25,5 +22,3 @@ const About = () => {
     </>
   );
 };
-
-export default About;
