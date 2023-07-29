@@ -2,6 +2,7 @@ import {GetStaticProps, InferGetStaticPropsType} from "next";
 import Head from "next/head";
 import {BlogPost} from "../@types/schema";
 import BlogCard from "../components/BlogCard";
+import Navbar from "../components/Navbar";
 import NotionService from "../services/notion-service";
 
 export const getStaticProps: GetStaticProps = async (context) => {
@@ -27,7 +28,7 @@ const Home = ({posts}: InferGetStaticPropsType<typeof getStaticProps>) => {
                 <meta name={"og:title"} title={"og:title"} content={title}/>
                 <meta name={"og:description"} title={"og:description"} content={title}/>
             </Head>
-
+            <Navbar />
             <div className="min-h-screen">
                 <main className="max-w-5xl mx-auto relative">
                     <div className="h-full pt-4 pb-16 mx-auto">
