@@ -1,6 +1,6 @@
-import React from "react";
+import Link from "next/link";
 
-const Navbar: React.FC = () => {
+const Navbar = () => {
   return (
     <nav className="bg-gray-800 p-4">
       <div className="container mx-auto">
@@ -8,28 +8,19 @@ const Navbar: React.FC = () => {
           <div className="text-white text-xl font-bold">My Website</div>
           <ul className="flex space-x-4">
             <li>
-              <a
-                href="#home"
-                className="text-white hover:text-gray-200 transition duration-300"
-              >
+              <Link href="/">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#about"
-                className="text-white hover:text-gray-200 transition duration-300"
-              >
+              <Link href="/about">
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#contact"
-                className="text-white hover:text-gray-200 transition duration-300"
-              >
+              <Link href="/contact">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
